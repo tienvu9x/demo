@@ -1,11 +1,16 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "2.6.3"
+ruby "2.6.5"
 gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt' 
 gem 'faker',          '1.7.3'
-gem 'will_paginate',           '3.1.6'
+gem 'carrierwave',             '1.2.2'
+gem 'mini_magick',             '4.7.0'
+gem 'will_paginate',           '3.1.7'
 gem 'bootstrap-will_paginate', '1.0.0'
+
+gem 'fog', '1.42'
+
 gem "bootstrap-sass", "3.3.7"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails"
 gem "jquery-rails"
@@ -40,6 +45,7 @@ gem "jbuilder", "~> 2.5"
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", ">= 1.1.0", require: false
+gem "pry-byebug"
 
 group :development, :test do
   # Call "byebug" anywhere in the code to stop execution and get a debugger console

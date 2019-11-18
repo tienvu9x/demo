@@ -33,3 +33,6 @@
 #mot so cong ty them 2 file nay
 /config/database.yml
 /config/secrets.yml
+
+# Ignore uploaded test images.
+/public/uploads
